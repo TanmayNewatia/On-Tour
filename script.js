@@ -30,19 +30,19 @@ $(document).ready(function () {
     const firstLetter = arrCitiesDivided[city][0].charAt(0);
 
     const $slide =
-    $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
+      $(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
 							<div class="slide__darkbg slide--${numSlide}__darkbg"></div>
 							<div class="slide__text-wrapper slide--${numSlide}__text-wrapper"></div>
 						</div>`);
 
     const letter =
-    $(`<div class="slide__letter slide--${numSlide}__letter">
+      $(`<div class="slide__letter slide--${numSlide}__letter">
 							${firstLetter}
 						</div>`);
 
     for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
       const text =
-      $(`<div class="slide__text slide__text--${i + 1}">
+        $(`<div class="slide__text slide__text--${i + 1}">
 								${arrCitiesDivided[city][i]}
 							</div>`);
       frag1.append(text);
@@ -81,14 +81,17 @@ $(document).ready(function () {
     diff = 0;
     $slider.addClass('animation');
     $slider.css({
-      'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)' });
+      'transform': 'translate3d(-' + (curSlide - direction) * 100 + '%, 0, 0)'
+    });
 
 
     $slider.find('.slide__darkbg').css({
-      'transform': 'translate3d(' + (curSlide - direction) * 50 + '%, 0, 0)' });
+      'transform': 'translate3d(' + (curSlide - direction) * 50 + '%, 0, 0)'
+    });
 
     $slider.find('.slide__text').css({
-      'transform': 'translate3d(0, 0, 0)' });
+      'transform': 'translate3d(0, 0, 0)'
+    });
 
   }
 
@@ -127,13 +130,16 @@ $(document).ready(function () {
       if (target === 1 && diff < 0 || target === numOfCities && diff > 0) return;
 
       $slider.css({
-        'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)' });
-        
+        'transform': 'translate3d(-' + ((curSlide - 1) * 100 + diff / 30) + '%, 0, 0)'
+      });
+
       $slider.find('.slide__darkbg').css({
-        'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)' });
+        'transform': 'translate3d(' + ((curSlide - 1) * 50 + diff / 60) + '%, 0, 0)'
+      });
 
       $slider.find('.slide__text').css({
-        'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)' });
+        'transform': 'translate3d(' + diff / 15 + 'px, 0, 0)'
+      });
 
     });
   });
@@ -171,3 +177,14 @@ $(document).ready(function () {
     if (e.which === 37) navigateLeft();
   });
 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "30%";
+}
+
+function changeIcon(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-xmark');
+  anchor.closest('.side-nav-wrapper').classList.toggle('active');
+}

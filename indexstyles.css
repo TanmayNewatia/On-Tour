@@ -3,6 +3,24 @@
     --bg2: white;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(54, 69, 79, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
 html {
     box-sizing: border-box;
     margin: none;
@@ -30,8 +48,58 @@ header {
     top: 0;
     left: 0;
     height: 50px;
-    box-shadow: 1px 1px 3px 3px grey;
-    border-radius: 0 0 5px 5px;
+}
+
+.menu,.side-nav-wrapper,.sidenav {
+    display: none;
+    font-size: 1.2em;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: rgba(12,12,12,0.8);
+    overflow-x: hidden;
+}
+
+.sidenav-items {
+    width: 100% !important;
+    padding-bottom: 20px;
+}
+
+.side-nav-wrapper.active .sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        display: grid;
+        align-items: center;
+        height: 50px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    header {
+        overflow-y: hidden;
+    }
+
+    .side-nav-wrapper {
+        display: block;
+    }
+
+    .nav-bar,
+    .nav-items {
+        display: none;
+    }
 }
 
 .nav-wrapper,
@@ -44,11 +112,12 @@ header {
 .acc-sec {
     display: flex;
     justify-content: flex-end;
-    padding: 0 20px 0 0;
+    align-items: center;
 }
 
 .nav-bar,
 .acc-sec-right {
+    align-items: center;
     width: 100%;
     display: flex;
     height: 100%;
@@ -57,28 +126,26 @@ header {
     padding: 0;
 }
 
-.acc-sec-right {
-    width: 30% !important;
-}
-
 .nav-items,
-.acc-sec-item {
+.acc-sec-item,.sidenav-items {
     width: 30%;
     padding: 16px 0;
     text-decoration: none;
     text-align: center;
     color: var(--bg2);
-}
-
-.acc-sec-item {
-    width: 100% !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
 }
 
 .nav-items:hover,
-.acc-sec-item:hover {
+.acc-sec-item:hover,.sidenav-items:hover {
     background-color: var(--bg2);
     color: var(--bg1);
     border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.11em;
+    font-size: 1.1em;
 }
 
 .logo {
@@ -92,34 +159,49 @@ header {
     height: 40px;
 }
 
-/*.acc-sec a {
-    padding: 0 10px;
-    color: black;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-}*/
-
-input[type="search"] {
-    /*check system to be applied*/
-    width: 50%;
-    background-color: var(--bg1);
-    color: var(--bg2);
-    font-size: 1.1rem;
-    border: none;
-    margin: 0;
-    padding: 0;
+.acc-sec-right {
+    width: 30% !important;
 }
 
+.acc-sec-item {
+    width: 100% !important;
+}
+
+.search {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 3px 5px;
+}
+
+input[type="search"] {
+    font-size: 0.85em;
+    width: 100%;
+    background-color: var(--bg1);
+    color: var(--bg2);
+    border: 0;
+    margin: 0 5px;
+    padding: 7px 0;
+    outline: none;
+}
+
+#search-icon {
+    color: var(--bg2);
+}
+
+/*page section css*/
+
 .page-section-1 {
+    padding: 50px 0 0 0;
     height: 100%;
     width: 100%;
     margin: none;
 }
 
-/*page section css*/
 .cont {
-    margin-top: 7vh;
     position: relative;
     height: 93vh;
 }

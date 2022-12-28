@@ -111,10 +111,6 @@ header {
     .nav-items {
         display: none;
     }
-
-    .side-nav {
-        min-width:
-    }
 }
 
 @media screen and (max-width: 420px) {

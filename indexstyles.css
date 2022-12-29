@@ -14,6 +14,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -42,20 +43,21 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    font-size: 18px;
+    font-size: 2rem;
     font-family: monospace, sans-serif;
 }
 
 header {
     z-index: 100;
     width: 100vw;
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     background-color: var(--bg1);
     position: fixed;
     top: 0;
     left: 0;
     height: 50px;
+    font-size: 1.8rem;
 }
 
 .menu,
@@ -99,6 +101,11 @@ header {
         color: white;
         margin-left: 10px;
         cursor: pointer;
+        text-decoration: none;
+    }
+
+    .menu:hover {
+        color: white;
     }
 
     .acc-sec-right .menu {
@@ -115,12 +122,14 @@ header {
     }
 
     .nav-bar,
-    .nav-items,.acc-sec-item {
+    .nav-items,
+    .acc-sec-item {
         display: none;
     }
 }
 
 @media screen and (max-width: 420px) {
+
     .body,
     .html {
         width: 100vw;
@@ -137,8 +146,9 @@ header {
     .slide--4,
     .slide--5,
     .nav__slide,
-    .nav {
-        display: none;
+    .nav,
+    .search {
+        display: none !important;
     }
 
     .side-nav--left,
@@ -196,8 +206,8 @@ header {
     color: var(--bg1);
     border-radius: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 0.11em;
-    font-size: 1.1em;
+    letter-spacing: 0.12em;
+    font-size: 1.2em;
 }
 
 .logo {
@@ -226,11 +236,11 @@ header {
     justify-content: flex-end;
     border: 3px solid white;
     border-radius: 20px;
-    padding: 3px 5px;
+    padding: 0 5px;
 }
 
 input[type="search"] {
-    font-size: 0.85em;
+    font-size: 0.9em;
     width: 100%;
     background-color: var(--bg1);
     color: var(--bg2);
@@ -244,6 +254,12 @@ input[type="search"] {
     color: var(--bg2);
 }
 
+.welcome {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 /*page section css*/
 
 .page-section-1 {
@@ -321,6 +337,7 @@ input[type="search"] {
 }
 
 .slide__text-wrapper {
+    font-family: monospace;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -433,7 +450,7 @@ input[type="search"] {
     position: absolute;
     width: 10%;
     height: 100%;
-    top: 0;
+    top: 100vh;
     z-index: 20;
     cursor: pointer;
     opacity: 0;

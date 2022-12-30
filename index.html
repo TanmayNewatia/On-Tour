@@ -20,7 +20,7 @@
     <header>
         <nav class="nav-wrapper">
             <div class="side-nav-wrapper">
-                <a class="menu" onclick="changeIcon1(this)"><i onclick="openNav()" class="fa fa-bars"></i></a>
+                <a class="menu" onclick="changeIcon1(this)"><i onclick="openNav()" class="chn fa fa-bars"></i></a>
                 <div id="mySidenav" class="sidenav">
                     <a class="sidenav-items" href="#sec1">
                         Home
@@ -47,50 +47,60 @@
             </ul>
         </nav>
         <div class="logo">
-            <img src="./profile.jpg" alt="On_Tour_Logo" />
+            <a href="#sec1"><img src="./profile.jpg" alt="On_Tour_Logo" /></a>
         </div>
         <div class="acc-sec">
             <div class="search">
-                <label for="insearch"><i id="search-icon" class="fas fa-search"></i></label>
+                <label for="insearch"><i id="search-icon" class="chn fas fa-search"></i></label>
                 <input id="insearch" type="search" placeholder="What are you Looking for?" />
             </div>
+            <a class="menu thm" onclick="changeIcon3(this)"><i class="chn fa-solid fa-sun"></i></a>
             <ul class="acc-sec-right">
-                <a class="menu" onclick="changeIcon2(this)"><i data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                <a class="menu" onclick="changeIcon2(this)"><i data-bs-toggle="modal" data-bs-target="#exampleModal"
                         class="acc-icon fas fa-sign-in-alt"></i></a>
-                <a class="acc-sec-item" href="#!">
-                    <li data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign In</li>
+                <a class="acc-sec-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <li>Sign In</li>
                 </a>
             </ul>
         </div>
     </header>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="chn modal-header">
+                    <div class="modal-sign"><p>Sign-In</p></div>
+                    <div class="modal-sign"><p>Sign-Up</p></div>
+                    <a class="chn a-close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></a>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="chn modal-body">
+                    <form action="">
+                        <label for=""></label>
+                        <input id="" type="" placeholder="" />
+                        <label for=""></label>
+                        <input id="" type="" placeholder="" />
+                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                <div class="chn modal-footer">
+                    <i class="fa-brands fa-google" style="font-size: 2rem"></i>
+                    <i class="fa-brands fa-github" style="font-size: 2rem"></i>
+                    <i class="fa-brands fa-facebook" style="font-size: 2rem"></i>
                 </div>
             </div>
         </div>
     </div>
-    <section class="page-section-1" id="sec1">
+    <section class="chn page-section-1" id="sec1">
         <h1 class="welcome">Welcome to</h1>
     </section>
-    <section class="page-section-1">
+    <section class="chn page-section-1">
         <div class="cont">
             <div class="slider"></div>
             <ul class="nav"></ul>
         </div>
         <div data-target='right' class="side-nav side-nav--right"></div>
         <div data-target='left' class="side-nav side-nav--left"></div>
+    </section>
+    <section class="chn page-section-1" id="sec1">
     </section>
 </body>
 

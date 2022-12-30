@@ -1,6 +1,6 @@
 :root {
-    --bg1: black;
-    --bg2: white;
+    --bg1: rgba(0,0,0,0.9);
+    --bg2: rgba(255,255,255,0.9);
 }
 
 *,
@@ -22,11 +22,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(54, 69, 79, 0.8);
+    background-color: var(--bg1);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: beige;
     border-radius: 5px;
 }
 
@@ -38,6 +38,11 @@ html {
     height: 100vh;
 }
 
+.dark-mode {
+    background-color: var(--bg1);
+    color: var(--bg2);
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -45,6 +50,8 @@ body {
     overflow-x: hidden;
     font-size: 2rem;
     font-family: monospace, sans-serif;
+    background-color: var(--bg2);
+    color: var(--bg1)
 }
 
 header {
@@ -52,7 +59,7 @@ header {
     width: 100vw;
     overflow: hidden;
     display: flex;
-    background-color: var(--bg1);
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,6 +74,24 @@ header {
     font-size: 1.2em;
 }
 
+.thm {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: var(--bg2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fa-sun {
+    color: #ffc000;
+}
+
+.fa-moon {
+    color: #FFA500
+}
 /* The side navigation menu */
 .sidenav {
     min-width: 300px;
@@ -98,14 +123,14 @@ header {
         display: flex;
         align-items: center;
         height: 50px;
-        color: white;
+        color: var(--bg2);
         margin-left: 10px;
         cursor: pointer;
         text-decoration: none;
     }
 
     .menu:hover {
-        color: white;
+        color: var(--bg2);
     }
 
     .acc-sec-right .menu {
@@ -208,6 +233,7 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.12em;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .logo {
@@ -226,6 +252,7 @@ header {
 }
 
 .acc-sec-item {
+    margin-right: 10px;
     width: 100% !important;
 }
 
@@ -234,7 +261,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border: 3px solid white;
+    border: 3px solid var(--bg2);
     border-radius: 20px;
     padding: 0 5px;
 }
@@ -242,7 +269,7 @@ header {
 input[type="search"] {
     font-size: 0.9em;
     width: 100%;
-    background-color: var(--bg1);
+    background-color: transparent;
     color: var(--bg2);
     border: 0;
     margin: 0 5px;
@@ -256,16 +283,49 @@ input[type="search"] {
 
 .welcome {
     text-align: center;
-    font-size: 4em;
+    font-size: 8rem;
     font-weight: 600;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Sign-In Section */
+
+.modal-sign {
+    width: 45%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modal-sign p {
+    margin: 0;
+}
+
+.a-close {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 5%;
+    font-size: 2rem;
+    color: var(--bg1);
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.a-close:hover {
+    color: var(--bg1);
+}
+
+.a-close.dark-mode {
+    color: var(--bg2);
+    background-color: transparent;
 }
 /*page section css*/
 
 .page-section-1 {
     padding: 50px 0 0 0;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     margin: none;
 }
 
@@ -279,6 +339,7 @@ input[type="search"] {
     height: 100%;
     transform: translate3d(0, 0, 0);
     will-change: transform;
+    color: var(--bg2);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -358,7 +419,6 @@ input[type="search"] {
     transform: translate3d(0, 0, 0);
     letter-spacing: 12px;
     z-index: 2;
-    color: #fff;
     will-change: transform;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -406,7 +466,7 @@ input[type="search"] {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid var(--bg2);
     margin-left: 10px;
     cursor: pointer;
 }
@@ -432,7 +492,7 @@ input[type="search"] {
     width: 75%;
     height: 75%;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--bg2);
     opacity: 0;
     transition: 300ms;
 }

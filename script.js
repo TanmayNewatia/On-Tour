@@ -194,3 +194,13 @@ function changeIcon2(anchor) {
   icon.classList.toggle('fa-sign-in-alt');
   icon.classList.toggle('fa-sign-out-alt');
 }
+
+function changeIcon3(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('fa-sun');
+  icon.classList.toggle('fa-moon');
+  var element = document.getElementsByClassName("chn");
+  for (let i = 0; i < element.length; i++) {
+    element[i].classList.toggle("dark-mode");
+  }
+}

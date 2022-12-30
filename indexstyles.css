@@ -244,7 +244,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 45px;
 }
 
 .acc-sec-right {
@@ -279,13 +279,6 @@ input[type="search"] {
 
 #search-icon {
     color: var(--bg2);
-}
-
-.welcome {
-    text-align: center;
-    font-size: 8rem;
-    font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Sign-In Section */
@@ -357,6 +350,27 @@ input[type="search"] {
     margin: 0 20px;
 }
 /*page section css*/
+
+.wel-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wel-logo {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
 
 .page-section-1 {
     padding: 50px 0 0 0;

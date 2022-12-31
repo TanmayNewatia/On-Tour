@@ -293,6 +293,18 @@ input[type="search"] {
     margin: 0;
 }
 
+.in {
+    padding: 5px 5px;
+    background-color: transparent;
+    border: 1px solid var(--bg1);
+    border-radius: 10px;
+}
+
+.fa-solid {
+    padding-right: 10px;
+    font-size: 2.2rem;
+}
+
 .a-close {
     display:flex;
     justify-content: center;
@@ -324,6 +336,7 @@ input[type="search"] {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.6rem;
     margin: 0 0 20px 0;
 }
@@ -332,7 +345,7 @@ input[type="search"] {
     width: 90%;
 }
 
-.si-btn {
+.s-btn {
     width: 50%;
     padding: 4px 0;
     background-color: #228C22;

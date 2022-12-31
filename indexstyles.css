@@ -1,6 +1,6 @@
 :root {
-    --bg1: rgba(0,0,0,0.9);
-    --bg2: rgba(255,255,255,0.9);
+    --bg1: rgba(0, 0, 0, 0.9);
+    --bg2: rgba(255, 255, 255, 0.9);
 }
 
 *,
@@ -92,6 +92,7 @@ header {
 .fa-moon {
     color: #FFA500
 }
+
 /* The side navigation menu */
 .sidenav {
     min-width: 300px;
@@ -306,7 +307,7 @@ input[type="search"] {
 }
 
 .a-close {
-    display:flex;
+    display: flex;
     justify-content: center;
     text-decoration: none;
     width: 5%;
@@ -332,6 +333,7 @@ input[type="search"] {
     justify-content: center;
     align-items: center;
 }
+
 .form-div {
     width: 100%;
     display: flex;
@@ -349,7 +351,7 @@ input[type="search"] {
     width: 50%;
     padding: 4px 0;
     background-color: #228C22;
-    font-size: 1.6rem;     
+    font-size: 1.6rem;
 }
 
 .si-op {
@@ -362,6 +364,7 @@ input[type="search"] {
 .op {
     margin: 0 20px;
 }
+
 /*page section css*/
 
 .wel-div {
@@ -377,6 +380,7 @@ input[type="search"] {
     font-size: 8rem;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 60px;
 }
 
 .wel-logo {
@@ -592,4 +596,52 @@ input[type="search"] {
 .side-nav--left {
     left: 0;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+
+.accordion-item {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    border: 2px solid rgba(12, 12, 12, 0.8) !important;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px 1px grey;
+    border-radius: 10px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg2) !important;
+    color: var(--bg1) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .5) !important;
+}
+
+.accordion-button {
+    font-size: 1.6rem !important;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 3.5rem;
+}
+
+.co {
+    width: 10%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.co i {
+    cursor: pointer;
+}
+
+.co i:hover {
+    color: #4169E1;
 }

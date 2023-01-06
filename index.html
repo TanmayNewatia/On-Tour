@@ -68,29 +68,33 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="chn modal-header">
-                    <div class="modal-sign">
-                        <p>Sign-In</p>
+                    <div class="modal-sign ">
+                        <a onclick="si()" data-bs-target="signincard" role="button" id="sit">
+                            <span class="act">Sign-In</span>
+                        </a>
                     </div>
                     <div class="modal-sign">
-                        <p>Sign-Up</p>
+                        <a onclick="su()" data-bs-target="signupcard" role="button" id="sut">
+                            <span class="notact">Sign-Up</span>
+                        </a>
                     </div>
                     <a class="chn a-close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></a>
                 </div>
                 <div class="chn modal-body">
-                    <div class="card">
+                    <div class="card show" id="signincard">
                         <div class="chn card-body">
                             <div>
                                 <form class="sign-in-form" action="">
                                     <div class="form-div">
                                         <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                        <input class="in" id="email-si" type="email" placeholder="Email" required />
+                                        <input class="chn in" id="email-si" type="email" placeholder="Email" required />
                                     </div>
                                     <div class="form-div">
                                         <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                        <input class="in" id="password-si" type="password" placeholder="Password"
+                                        <input class="chn in" id="password-si" type="password" placeholder="Password"
                                             required />
                                     </div>
-                                    <button class="s-btn">Sign In</button>
+                                    <button class="chn s-btn">Sign In</button>
                                 </form>
                                 <hr>
                                 <div class="si-op">
@@ -102,20 +106,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card collapse" id="signupcard">
                         <div class="chn card-body">
                             <div>
                                 <form class="sign-in-form" action="">
                                     <div class="form-div">
                                         <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                        <input class="in" id="email-si" type="email" placeholder="Email" required />
+                                        <input class="chn in" id="email-si" type="email" placeholder="Email" required />
                                     </div>
                                     <div class="form-div">
                                         <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                        <input class="in" id="password-si" type="password" placeholder="Password"
+                                        <input class="chn in" id="password-si" type="password" placeholder="Password"
                                             required />
                                     </div>
-                                    <button class="s-btn">Sign Up</button>
+                                    <button class="chn s-btn">Sign Up</button>
                                 </form>
                                 <hr>
                                 <div class="si-op">
@@ -133,9 +137,9 @@
     </div>
     <section class="chn page-section-1" id="sec1">
         <div class="wel-div">
-            <h1 class="welcome" style="margin-bottom: 0;">Welcome to</h1>
+            <h1 class="welcome">Welcome to</h1>
             <img class="wel-logo" src="./images/ontour.png" alt="On_Tour_Logo" />
-            <h1 class="welcome" style="margin-bottom: 0;">A Place to Build Your Trip</h1>
+            <h1 class="tagline">A Place to Build Your Trip</h1>
         </div>
     </section>
     <section class="chn page-section-1">
@@ -146,8 +150,8 @@
         <div data-target='right' class="side-nav side-nav--right"></div>
         <div data-target='left' class="side-nav side-nav--left"></div>
     </section>
-    <section class="chn">
-        <h2 class="welcome">Having Doubts?</h2>
+    <section class="chn faq">
+        <h2 class="faqhead">Having Doubts?</h2>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -225,12 +229,14 @@
                 </div>
             </div>
         </div>
-        <h2 class="welcome" style="margin-top: 60px">Want to Connect?</h2>
-        <div class="contacts">
-            <div class="co"><i class="fa-brands fa-google"></i></div>
-            <div class="co"><i class="fa-brands fa-facebook"></i></div>
-            <div class="co"><i class="fa-brands fa-linkedin-in"></i></div>
-        </div>
+        <footer>
+            <h2 class="welcome">Want to Connect?</h2>
+            <div class="contacts">
+                <div class="co"><i class="fa-brands fa-google"></i></div>
+                <div class="co"><i class="fa-brands fa-facebook"></i></div>
+                <div class="co"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+        </footer>
     </section>
 </body>
 

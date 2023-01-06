@@ -306,6 +306,10 @@ input[type="search"] {
     font-size: 2.2rem;
 }
 
+.card, .modal-content {
+    border: 0 !important;
+}
+
 .a-close {
     display: flex;
     justify-content: center;
@@ -347,11 +351,30 @@ input[type="search"] {
     width: 90%;
 }
 
+.in.dark-mode {
+    border-color:rgba(255,255,255,0.7);
+}
+
+.in.dark-mode:focus-visible {
+    border-color: rgb(255,255,255);
+}
+
 .s-btn {
     width: 50%;
     padding: 4px 0;
-    background-color: #228C22;
-    font-size: 1.6rem;
+    background-color: #4169e1;
+    font-size: 1.8rem;
+    border-color:rgba(0, 0, 0, 0.9);
+}
+
+.act {
+    text-decoration: none !important;
+    color: #4169e1;
+    font-weight: 600;
+}
+
+.s-btn.dark-mode {
+    border-color: rgba(255,255,255,0.9);
 }
 
 .si-op {
@@ -375,12 +398,22 @@ input[type="search"] {
     align-items: center;
 }
 
-.welcome {
+.tagline {
+    font-style: oblique;
+    font-size: 5rem;
+}
+
+.welcome, .faqhead {
     text-align: center;
     font-size: 8rem;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 60px;
+}
+
+.faqhead {
+    font-size: 7rem !important;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .wel-logo {
@@ -392,6 +425,11 @@ input[type="search"] {
 .page-section-1 {
     padding: 50px 0 0 0;
     height: 100%;
+    width: 100vw;
+    margin: none;
+}
+
+.faq {
     width: 100vw;
     margin: none;
 }

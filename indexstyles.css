@@ -39,7 +39,7 @@ html {
 }
 
 .dark-mode {
-    background-color: var(--bg1);
+    background-color: var(--bg1) !important;
     color: var(--bg2) !important;
 }
 
@@ -178,6 +178,9 @@ header {
 
 @media screen and (max-width: 420px) {
 
+    .co {
+        width: 25% !important;
+    }
     .welcome {
         font-size: 5.5rem !important;
     }
@@ -413,6 +416,7 @@ input[type="search"] {
     justify-content: center;
     font-size: 2.5rem;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .hrr,.si-op p {
@@ -430,7 +434,7 @@ input[type="search"] {
     margin: 0;
 }
 
-hr {
+.hrr hr {
     height: 3px !important;
     background-color: #FF69B4 !important;
     width: 40%;

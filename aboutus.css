@@ -14,6 +14,7 @@ body {
 .welcome {
     margin-bottom: 35px;
 }
+
 .gap .wel-div {
     row-gap: 12px;
 }
@@ -62,6 +63,9 @@ body {
 }
 
 .gap .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
 }
 
@@ -70,6 +74,7 @@ body {
 }
 
 .row .abhr {
+    margin-top: 0;
     height: 3px !important;
     background-color: var(--bg1);
 }
@@ -96,4 +101,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+    .row {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .col-md-4:first-child {
+        min-width: 60% !important;
+    }
+
+    .col-md-4:last-child {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 1.6rem;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .col-md-4:first-child {
+        min-width: 70% !important;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .col-md-4:last-child {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
 }

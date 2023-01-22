@@ -7,6 +7,10 @@ body {
     font-size: 10px;
 }
 
+.gap {
+    position: relative;
+}
+
 .gap .welcome {
     margin-bottom: 25px;
 }
@@ -111,7 +115,26 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .aboutimg {
+        max-width: 30% !important;
+    }
+}
+
 @media screen and (max-width: 720px) {
+    .aboutimg {
+        max-width: 35% !important;
+    }
+
+    .page-section-1 {
+        position: relative;
+        height: auto;
+    }
+
+    .welcome {
+        margin-bottom: 15px;
+    }
+
     .row {
         justify-content: center !important;
         align-items: center;
@@ -133,6 +156,18 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    .gap .card {
+        width: 75%;
+    }
+
+    .aboutimg {
+        max-width: 50% !important;
+    }
+
+    .welcome {
+        margin-bottom: 10px;
+    }
+
     .row {
         justify-content: center !important;
         align-items: center;

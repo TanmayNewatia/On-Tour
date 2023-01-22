@@ -1,11 +1,6 @@
-.bgimage {
-    filter: blur(4px);
-    filter: brightness(-10px);
-}
-
-.bgimg {
-    position: absolute;
-    top: 0;
+:root {
+    --primary: rgba(0, 0, 0, 0.8);
+    --sec: rgba(255, 255, 255, 0.5);
 }
 
 .contain {
@@ -31,9 +26,15 @@
     width: 25%;
     height: 250px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--primary);
     margin-right: 10px;
     margin-bottom: 20px;
+    color: white;
+}
+
+.cd.dark-mode {
+    background-color: var(--sec) !important;
+    color: black !important;
 }
 
 .cd h4 {
@@ -69,9 +70,6 @@ button img {
     position: relative;
 }
 
-footer .welcome {
-    color: white !important;
-}
 @media screen and (max-width: 900px) {
     .cd {
         width: 22.5%;
@@ -96,6 +94,10 @@ footer .welcome {
         width: 100px;
         border-radius: 50px;
     }
+}
+
+footer {
+    margin-top: 0 !important;
 }
 
 @media screen and (max-width: 500px) {

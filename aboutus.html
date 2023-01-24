@@ -19,135 +19,139 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-wrapper">
-            <div class="side-nav-wrapper">
-                <a class="menu" onclick="changeIcon1(this)"><i onclick="openNav()" class="chn fa fa-bars"></i></a>
-                <div id="mySidenav" class="sidenav">
-                    <a class="sidenav-items" href="./index.html">
-                        Home
-                    </a>
-                    <a class="sidenav-items" href="#sec1">
-                        About Us
-                    </a>
-                    <a class="sidenav-items" href="./packages.html">
-                        Packages
-                    </a>
-                </div>
-            </div>
-            <ul class="nav-bar">
-                <a class="nav-items" href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a class="nav-items" href="#sec1">
-                    <li>About Us</li>
-                </a>
-                <a class="nav-items" href="./packages.html">
-                    <li>Packages</li>
-                </a>
-                <!--<a class="nav-items" href="#!"><li>About Us</li></a>-->
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="#sec1"><img src="./images/ontour.png" alt="On_Tour_Logo" /></a>
-        </div>
-        <div class="acc-sec">
-            <div class="search">
-                <label for="insearch"><i id="search-icon" class="chn fas fa-search"></i></label>
-                <input id="insearch" type="search" placeholder="What are you Looking for?" />
-            </div>
-            <a class="menu thm" onclick="changeIcon3(this)"><i class="fa-solid fa-sun"></i></a>
-            <ul class="acc-sec-right">
-                <a class="menu" onclick="changeIcon2(this)"><i data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        class="acc-icon fas fa-sign-in-alt"></i></a>
-                <a class="acc-sec-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <li>Sign In</li>
-                </a>
-            </ul>
-        </div>
-    </header>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="chn modal-header">
-                    <div class="modal-sign ">
-                        <a onclick="si()" data-bs-target="signincard" role="button" id="sit">
-                            <span class="act">Sign-In</span>
+    <div class="container-fluid">
+        <header>
+            <nav class="nav-wrapper">
+                <div class="side-nav-wrapper">
+                    <a class="menu" onclick="changeIcon1(this)"><i onclick="openNav()" class="chn fa fa-bars"></i></a>
+                    <div id="mySidenav" class="sidenav">
+                        <a class="sidenav-items" href="./index.html">
+                            Home
+                        </a>
+                        <a class="sidenav-items" href="#sec1">
+                            About Us
+                        </a>
+                        <a class="sidenav-items" href="./packages.html">
+                            Packages
                         </a>
                     </div>
-                    <div class="modal-sign">
-                        <a onclick="su()" data-bs-target="signupcard" role="button" id="sut">
-                            <span class="notact">Sign-Up</span>
-                        </a>
-                    </div>
-                    <a class="chn a-close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></a>
                 </div>
-                <div class="chn modal-body">
-                    <div class="card show" id="signincard">
-                        <div class="chn card-body">
-                            <div>
-                                <form class="sign-in-form" action="">
-                                    <div class="form-div">
-                                        <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                        <input class="chn in" id="email-si" type="email" placeholder="Email" required />
+                <ul class="nav-bar">
+                    <a class="nav-items" href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a class="nav-items" href="#sec1">
+                        <li>About Us</li>
+                    </a>
+                    <a class="nav-items" href="./packages.html">
+                        <li>Packages</li>
+                    </a>
+                    <!--<a class="nav-items" href="#!"><li>About Us</li></a>-->
+                </ul>
+            </nav>
+            <div class="logo">
+                <a href="#sec1"><img src="./images/ontour.png" alt="On_Tour_Logo" /></a>
+            </div>
+            <div class="acc-sec">
+                <div class="search">
+                    <label for="insearch"><i id="search-icon" class="chn fas fa-search"></i></label>
+                    <input id="insearch" type="search" placeholder="What are you Looking for?" />
+                </div>
+                <a class="menu thm" onclick="changeIcon3(this)"><i class="fa-solid fa-sun"></i></a>
+                <ul class="acc-sec-right">
+                    <a class="menu" onclick="changeIcon2(this)"><i data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="acc-icon fas fa-sign-in-alt"></i></a>
+                    <a class="acc-sec-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <li>Sign In</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="chn modal-header">
+                        <div class="modal-sign ">
+                            <a onclick="si()" data-bs-target="signincard" role="button" id="sit">
+                                <span class="act">Sign-In</span>
+                            </a>
+                        </div>
+                        <div class="modal-sign">
+                            <a onclick="su()" data-bs-target="signupcard" role="button" id="sut">
+                                <span class="notact">Sign-Up</span>
+                            </a>
+                        </div>
+                        <a class="chn a-close" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="chn modal-body">
+                        <div class="card show" id="signincard">
+                            <div class="chn card-body">
+                                <div>
+                                    <form class="sign-in-form" action="">
+                                        <div class="form-div">
+                                            <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
+                                            <input class="chn in" id="email-si" type="email" placeholder="Email"
+                                                required />
+                                        </div>
+                                        <div class="form-div">
+                                            <label for="password-si"><i class="fa-solid fa-lock"></i></label>
+                                            <input class="chn in" id="password-si" type="password"
+                                                placeholder="Password" required />
+                                        </div>
+                                        <button class="chn s-btn">Sign In</button>
+                                    </form>
+                                    <div class="hrr">
+                                        <hr>
+                                        <p>or</p>
+                                        <hr>
                                     </div>
-                                    <div class="form-div">
-                                        <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                        <input class="chn in" id="password-si" type="password" placeholder="Password"
-                                            required />
-                                    </div>
-                                    <button class="chn s-btn">Sign In</button>
-                                </form>
-                                <div class="hrr">
-                                    <hr>
-                                    <p>or</p>
-                                    <hr>
-                                </div>
-                                <div class="si-op">
-                                    <p>Sign-In Using</p>
-                                    <div class="si-co">
-                                        <i class="op fa-brands fa-google"></i>
-                                        <i class="op fa-brands fa-github"></i>
-                                        <i class="op fa-brands fa-facebook"></i>
-                                        <i class="op fa-brands fa-linkedin-in"></i>
+                                    <div class="si-op">
+                                        <p>Sign-In Using</p>
+                                        <div class="si-co">
+                                            <i class="op fa-brands fa-google"></i>
+                                            <i class="op fa-brands fa-github"></i>
+                                            <i class="op fa-brands fa-facebook"></i>
+                                            <i class="op fa-brands fa-linkedin-in"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card collapse" id="signupcard">
-                        <div class="chn card-body">
-                            <div>
-                                <form class="sign-in-form" action="">
-                                    <div class="form-div">
-                                        <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
-                                        <input class="chn in" id="email-si" type="email" placeholder="Email" required />
+                        <div class="card collapse" id="signupcard">
+                            <div class="chn card-body">
+                                <div>
+                                    <form class="sign-in-form" action="">
+                                        <div class="form-div">
+                                            <label for="email-si"><i class="fa-solid fa-envelope"></i></label>
+                                            <input class="chn in" id="email-si" type="email" placeholder="Email"
+                                                required />
+                                        </div>
+                                        <div class="form-div">
+                                            <label for="password-si"><i class="fa-solid fa-lock"></i></label>
+                                            <input class="chn in" id="password-si" type="password"
+                                                placeholder="Password" required />
+                                        </div>
+                                        <div class="form-div">
+                                            <label for="conpassword-si"><i
+                                                    class="fa-sharp fa-solid fa-check-double"></i></label>
+                                            <input class="chn in" id="conpassword-si" type="password"
+                                                placeholder="Confirm Password" required />
+                                        </div>
+                                        <button class="chn s-btn">Sign Up</button>
+                                    </form>
+                                    <div class="hrr">
+                                        <hr>
+                                        <p>or</p>
+                                        <hr>
                                     </div>
-                                    <div class="form-div">
-                                        <label for="password-si"><i class="fa-solid fa-lock"></i></label>
-                                        <input class="chn in" id="password-si" type="password" placeholder="Password"
-                                            required />
-                                    </div>
-                                    <div class="form-div">
-                                        <label for="conpassword-si"><i
-                                                class="fa-sharp fa-solid fa-check-double"></i></label>
-                                        <input class="chn in" id="conpassword-si" type="password"
-                                            placeholder="Confirm Password" required />
-                                    </div>
-                                    <button class="chn s-btn">Sign Up</button>
-                                </form>
-                                <div class="hrr">
-                                    <hr>
-                                    <p>or</p>
-                                    <hr>
-                                </div>
-                                <div class="si-op">
-                                    <p>Sign-Up Using</p>
-                                    <div class="si-co">
-                                        <i class="op fa-brands fa-google"></i>
-                                        <i class="op fa-brands fa-github"></i>
-                                        <i class="op fa-brands fa-facebook"></i>
-                                        <i class="op fa-brands fa-linkedin-in"></i>
+                                    <div class="si-op">
+                                        <p>Sign-Up Using</p>
+                                        <div class="si-co">
+                                            <i class="op fa-brands fa-google"></i>
+                                            <i class="op fa-brands fa-github"></i>
+                                            <i class="op fa-brands fa-facebook"></i>
+                                            <i class="op fa-brands fa-linkedin-in"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -156,184 +160,198 @@
                 </div>
             </div>
         </div>
-    </div>
-    <section class="chn page-section-1" id="sec1">
-        <div class="wel-div">
-            <h1 class="welcome">About</h1>
-            <div class="chn card mb-3">
-                <div class="chn row g-0">
-                    <div class="row-md-4 aboutimg">
-                        <img src="./images/ontour.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="row-md-4">
-                        <div class="card-body">
-                            <p class="card-text cen">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur ratione
-                                exercitationem, possimus vero est quos sequi similique, autem facilis illo at?
-                                Laudantium excepturi iusto ratione quia ut reprehenderit. Accusamus animi minima a
-                                officia inventore aspernatur odio veniam et tempora nulla repellendus voluptatum
-                                deserunt corrupti ex soluta, cupiditate praesentium laboriosam autem quibusdam!
-                                Doloribus voluptas, adipisci labore praesentium est aliquam magnam officiis ipsa
-                                accusamus eius fugiat quas cupiditate ipsum cumque! Deleniti blanditiis dignissimos
-                                minus? Adipisci cumque numquam odit quia consectetur sed repellendus iste atque
-                                veritatis rem cum pariatur nihil illo cupiditate possimus eius dolorem officia tempore,
-                                rerum officiis nesciunt tenetur, quis perspiciatis a. Quo earum consequatur sint nemo
-                                similique amet perspiciatis quidem dolores reiciendis facere, aliquam ab culpa
-                                consequuntur, officia ullam saepe commodi! Ipsa nobis dolores, illum amet qui adipisci
-                                libero exercitationem, culpa doloribus voluptas eligendi totam architecto, minus fugiat
-                                consectetur quas et molestiae voluptatum perferendis a dolorem.
-                            </p>
+        <section class="chn page-section-1" id="sec1">
+            <div class="wel-div">
+                <h1 class="welcome">About</h1>
+                <div class="chn card mb-3">
+                    <div class="chn row g-0">
+                        <div class="row-md-4 aboutimg">
+                            <img src="./images/ontour.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="chn gap">
-        <div class="wel-div">
-            <h1 class="welcome">Team</h1>
-            <div class="chn card mb-3">
-                <div class="chn row g-0">
-                    <div class="col-md-4">
-                        <img src="./images/Kashish_Behal.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="card-title">Kashish Behal</h5>
-                                <p class="card-text">Kashish Behal is from Ludhiana,Punjab.
-                                    Graduating from SRMIST Delhi-NCR, Computer Science (BTech). She's working with GFG
-                                    team
-                                    from past 4
-                                    months and she's always energetic and eager to learn new skills. Currently she is
-                                    leading her path
-                                    on Full Stack Development and seeking a role of the same in big MNCs.</p>
-                            </div>
-                            <div>
-                                <hr class="chn abhr">
-                                <div class="teamcon">
-                                    <h5 class="cardcon">Connect On: </h5>
-                                    <div class="co"><a href="https://github.com/KashishBehal" target="_blank"><i
-                                                class="fa-brands fa-github"></i></a></div>
-                                    <div class="co"><a href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
-                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                                    <div class="co"><a href="https://www.linkedin.com/in/kashish-behal-618100231"
-                                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="chn card mb-3">
-                <div class="chn row g-0">
-                    <div class="col-md-4">
-                        <img src="./images/palakdwivedi.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="card-title">Palak Dwivedi</h5>
-                                <p class="card-text">
-                                    Palak Dwivedi is from Lucknow, Uttar Pradesh. Currently pursuing Bachelor's
-                                    degree from SRMIST Delhi=NCR. Being a Machine Learning enthusiast , she aspire to
-                                    build her career in same. She love to explore different fields and take hands-on
-                                    experiences on same. She have good knowledge on various programming languages like
-                                    Java, Python, C and C++.
+                        <div class="row-md-4">
+                            <div class="card-body">
+                                <p class="card-text cen">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur
+                                    ratione
+                                    exercitationem, possimus vero est quos sequi similique, autem facilis illo at?
+                                    Laudantium excepturi iusto ratione quia ut reprehenderit. Accusamus animi minima a
+                                    officia inventore aspernatur odio veniam et tempora nulla repellendus voluptatum
+                                    deserunt corrupti ex soluta, cupiditate praesentium laboriosam autem quibusdam!
+                                    Doloribus voluptas, adipisci labore praesentium est aliquam magnam officiis ipsa
+                                    accusamus eius fugiat quas cupiditate ipsum cumque! Deleniti blanditiis dignissimos
+                                    minus? Adipisci cumque numquam odit quia consectetur sed repellendus iste atque
+                                    veritatis rem cum pariatur nihil illo cupiditate possimus eius dolorem officia
+                                    tempore,
+                                    rerum officiis nesciunt tenetur, quis perspiciatis a. Quo earum consequatur sint
+                                    nemo
+                                    similique amet perspiciatis quidem dolores reiciendis facere, aliquam ab culpa
+                                    consequuntur, officia ullam saepe commodi! Ipsa nobis dolores, illum amet qui
+                                    adipisci
+                                    libero exercitationem, culpa doloribus voluptas eligendi totam architecto, minus
+                                    fugiat
+                                    consectetur quas et molestiae voluptatum perferendis a dolorem.
                                 </p>
                             </div>
-                            <div>
-                                <hr class="chn abhr">
-                                <div class="teamcon">
-                                    <h5 class="cardcon">Connect On: </h5>
-                                    <div class="co"><a href="https://github.com/PalakDwivedi02" target="_blank"><i
-                                                class="fa-brands fa-github"></i></a></div>
-                                    <!--<div class="co"><a href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chn gap">
+            <div class="wel-div">
+                <h1 class="welcome">Team</h1>
+                <div class="chn card mb-3">
+                    <div class="chn row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/Kashish_Behal.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Kashish Behal</h5>
+                                    <p class="card-text">Kashish Behal is from Ludhiana,Punjab.
+                                        Graduating from SRMIST Delhi-NCR, Computer Science (BTech). She's working with
+                                        GFG
+                                        team
+                                        from past 4
+                                        months and she's always energetic and eager to learn new skills. Currently she
+                                        is
+                                        leading her path
+                                        on Full Stack Development and seeking a role of the same in big MNCs.</p>
+                                </div>
+                                <div>
+                                    <hr class="chn abhr">
+                                    <div class="teamcon">
+                                        <h5 class="cardcon">Connect On: </h5>
+                                        <div class="co"><a href="https://github.com/KashishBehal" target="_blank"><i
+                                                    class="fa-brands fa-github"></i></a></div>
+                                        <div class="co"><a
+                                                href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
+                                                target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                        <div class="co"><a href="https://www.linkedin.com/in/kashish-behal-618100231"
+                                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chn card mb-3">
+                    <div class="chn row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/palakdwivedi.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Palak Dwivedi</h5>
+                                    <p class="card-text">
+                                        Palak Dwivedi is from Lucknow, Uttar Pradesh. Currently pursuing Bachelor's
+                                        degree from SRMIST Delhi=NCR. Being a Machine Learning enthusiast , she aspire
+                                        to
+                                        build her career in same. She love to explore different fields and take hands-on
+                                        experiences on same. She have good knowledge on various programming languages
+                                        like
+                                        Java, Python, C and C++.
+                                    </p>
+                                </div>
+                                <div>
+                                    <hr class="chn abhr">
+                                    <div class="teamcon">
+                                        <h5 class="cardcon">Connect On: </h5>
+                                        <div class="co"><a href="https://github.com/PalakDwivedi02" target="_blank"><i
+                                                    class="fa-brands fa-github"></i></a></div>
+                                        <!--<div class="co"><a href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
                                             target="_blank"><i class="fa-brands fa-instagram"></i></a></div>-->
-                                    <div class="co"><a href="https://www.linkedin.com/in/palak-dwivedi-017437247"
-                                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                        <div class="co"><a href="https://www.linkedin.com/in/palak-dwivedi-017437247"
+                                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="chn card mb-3">
-                <div class="chn row g-0">
-                    <div class="col-md-4">
-                        <img src="./images/pareshbansal.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="card-title">Paresh Bansal</h5>
-                                <p class="card-text">
-                                    Paresh Bansal is from Mathura, Uttar Pradesh. He is a second year Btech student
-                                    majoring in Computer Science Engineering from SRM University. He is passionate about
-                                    technology and learning. He is a self believer and a leader who loves to take
-                                    initiative on his own. He is always looking forward to exploring various domains.
-                                </p>
-                            </div>
-                            <div>
-                                <hr class="chn abhr">
-                                <div class="teamcon">
-                                    <h5 class="cardcon">Connect On: </h5>
-                                    <div class="co"><a href="http://github.com/Pareshmahi" target="_blank"><i
-                                                class="fa-brands fa-github"></i></a></div>
-                                    <!--<div class="co"><a href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
+                <div class="chn card mb-3">
+                    <div class="chn row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/pareshbansal.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Paresh Bansal</h5>
+                                    <p class="card-text">
+                                        Paresh Bansal is from Mathura, Uttar Pradesh. He is a second year Btech student
+                                        majoring in Computer Science Engineering from SRM University. He is passionate
+                                        about
+                                        technology and learning. He is a self believer and a leader who loves to take
+                                        initiative on his own. He is always looking forward to exploring various
+                                        domains.
+                                    </p>
+                                </div>
+                                <div>
+                                    <hr class="chn abhr">
+                                    <div class="teamcon">
+                                        <h5 class="cardcon">Connect On: </h5>
+                                        <div class="co"><a href="http://github.com/Pareshmahi" target="_blank"><i
+                                                    class="fa-brands fa-github"></i></a></div>
+                                        <!--<div class="co"><a href="https://instagram.com/kashishbehal8?igshid=YmMyMTA2M2Y="
                                             target="_blank"><i class="fa-brands fa-instagram"></i></a></div>-->
-                                    <div class="co"><a href="http://linkedin.com/in/pareshbansal-495a90237"
-                                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                        <div class="co"><a href="http://linkedin.com/in/pareshbansal-495a90237"
+                                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chn card mb-3">
+                    <div class="chn row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/tanmaynewatia.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Tanmay Newatia</h5>
+                                    <p class="card-text">Tanmay Newatia is currently an Undergrad Student pursing B.
+                                        Tech
+                                        in CSE at SRM University. He's a Tech and Data enthusiast. He have built his
+                                        web-development base with
+                                        HTML, CSS, and is leading towards learning JavaScript and ReactJS. Further he
+                                        has a
+                                        good command over various programming languages such as Python, C++ and C.</p>
+                                </div>
+                                <div>
+                                    <hr class="chn abhr">
+                                    <div class="teamcon">
+                                        <h5 class="cardcon">Connect On: </h5>
+                                        <div class="co"><a href="https://github.com/TanmayNewatia" target="_blank"><i
+                                                    class="fa-brands fa-github"></i></a></div>
+                                        <div class="co"><a href="https://www.instagram.com/tanmay_newatia/"
+                                                target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                        <div class="co"><a href="https://www.linkedin.com/in/tanmay-newatia-89454622b/"
+                                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="chn card mb-3">
-                <div class="chn row g-0">
-                    <div class="col-md-4">
-                        <img src="./images/tanmaynewatia.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="card-title">Tanmay Newatia</h5>
-                                <p class="card-text">Tanmay Newatia is currently an Undergrad Student pursing B. Tech
-                                    in CSE at SRM University. He's a Tech and Data enthusiast. He have built his
-                                    web-development base with
-                                    HTML, CSS, and is leading towards learning JavaScript and ReactJS. Further he has a
-                                    good command over various programming languages such as Python, C++ and C.</p>
-                            </div>
-                            <div>
-                                <hr class="chn abhr">
-                                <div class="teamcon">
-                                    <h5 class="cardcon">Connect On: </h5>
-                                    <div class="co"><a href="https://github.com/TanmayNewatia" target="_blank"><i
-                                                class="fa-brands fa-github"></i></a></div>
-                                    <div class="co"><a href="https://www.instagram.com/tanmay_newatia/"
-                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                                    <div class="co"><a href="https://www.linkedin.com/in/tanmay-newatia-89454622b/"
-                                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <footer>
+                <h2 class="welcome">Want to Connect?</h2>
+                <div class="contacts">
+                    <div class="co"><i class="fa-brands fa-google"></i></div>
+                    <div class="co"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="co"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="co"><i class="fa-brands fa-linkedin-in"></i></div>
                 </div>
-            </div>
+            </footer>
+        </section>
+        <div class="chn copyright">
+            <p>Copyright (c) 2023, On-Tour. All Rights Reserved.</p>
         </div>
-        <footer>
-            <h2 class="welcome">Want to Connect?</h2>
-            <div class="contacts">
-                <div class="co"><i class="fa-brands fa-google"></i></div>
-                <div class="co"><i class="fa-brands fa-instagram"></i></div>
-                <div class="co"><i class="fa-brands fa-facebook"></i></div>
-                <div class="co"><i class="fa-brands fa-linkedin-in"></i></div>
-            </div>
-        </footer>
-    </section>
-    <div class="chn copyright">
-        <p>Copyright (c) 2023, On-Tour. All Rights Reserved.</p>
     </div>
 </body>
 
